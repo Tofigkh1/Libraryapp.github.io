@@ -993,6 +993,9 @@ max-width: 290px;
   }
 }
 
+.btnhide{
+  display: none;
+}
 
 .alert{
   display: none;

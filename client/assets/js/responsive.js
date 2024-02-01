@@ -83,7 +83,7 @@ xbtnres.onclick = function(){
 
 
 document.getElementById("joinbtnres").onclick = function() {
-    let inputValue = document.getElementById("inputfaild").value;
+    let inputValue = document.getElementById("inputfaildmail").value;
 
     if (inputValue.trim() === "") {
         document.getElementById("alertmessage").style.display = "block";
@@ -97,3 +97,25 @@ document.getElementById("joinbtnres").onclick = function() {
     }
 };
 
+
+document.getElementById("showpasswordbtn").onclick = function() {
+    let passwordInput = document.getElementById("inputfaild");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        document.getElementById("hidepasswordbtn").style.display = "block";
+        document.getElementById("showpasswordbtn").style.display = "none";
+    } else {
+        passwordInput.type = "password";
+    }
+};
+
+document.getElementById("hidepasswordbtn").onclick = function(){
+    let passwordInput = document.getElementById("inputfaild");
+    if (passwordInput.type === "text") {
+        passwordInput.type = "password";
+        document.getElementById("hidepasswordbtn").style.display = "none";
+        document.getElementById("showpasswordbtn").style.display = "block";
+    } else {
+        passwordInput.type = "password";
+    }
+}
