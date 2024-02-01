@@ -68,8 +68,8 @@ xbtnres.onclick = function(){
     xbtnres.style.animation = "fadeOut 0.3s"
     hamburgerbtn.style.display = "block";
     xbtnres.style.display = "none"
-    setTimeout(function(){
     xbtnres.style.display = "none"
+    setTimeout(function(){
     overlayrespons.style.display = "none";
     joinustextres.style.display = "none";
     }, 300)
