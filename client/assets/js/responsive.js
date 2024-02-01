@@ -51,20 +51,28 @@ console.log(hamburgerbtn);
 joinclickres.onclick = function(){
     overlayrespons.style.display = "block";
     overlayrespons.style.opacity = "1";
-    overlayrespons.style.animation = "fadeIn 0.3s"
+    overlayrespons.style.animation = "fadeIn 0.4s"
     hamburgerbtn.style.display = "none";
     xbtnres.style.display = "block"
     joinustextres.style.display = "block";
+    joinustextres.style.animation = "fadeIn 0.4s";
 
 
 };
 
 
 xbtnres.onclick = function(){
+
+    overlayrespons.style.opacity = "0";
+    overlayrespons.style.animation = "fadeOut 0.5s"
+    joinustextres.style.animation = "fadeOut 0.3s"
+    hamburgerbtn.style.display = "block";
+    setTimeout(function(){
     overlayrespons.style.display = "none";
     xbtnres.style.display = "none"
-    hamburgerbtn.style.display = "block";
     joinustextres.style.display = "none";
-}
+        
+    }, 300)
+};
 
 
