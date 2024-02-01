@@ -1,3 +1,8 @@
+let joinclickres = document.getElementById("joinclickres");
+let joinustextres = document.getElementById("joinustextres");
+let xbtnres = document.getElementById("xbtnres");
+
+// -----
 let hamburgerbtn = document.getElementById("hamburgerbtn");
 let overlayrespons = document.getElementById("overlayrespons");
 let xbtn = document.getElementById("xbtn");
@@ -30,6 +35,36 @@ xbtn.onclick = function(){
         responstag.style.display = "none"
         xbtn.style.display = "none"
     },300);
-}
+
+    joinclickresFunction();
+ 
+
+};
 
 console.log(hamburgerbtn);
+
+
+
+// ---------- join us responsive
+
+
+joinclickres.onclick = function(){
+    overlayrespons.style.display = "block";
+    overlayrespons.style.opacity = "1";
+    overlayrespons.style.animation = "fadeIn 0.3s"
+    hamburgerbtn.style.display = "none";
+    xbtnres.style.display = "block"
+    joinustextres.style.display = "block";
+
+
+};
+
+
+xbtnres.onclick = function(){
+    overlayrespons.style.display = "none";
+    xbtnres.style.display = "none"
+    hamburgerbtn.style.display = "block";
+    joinustextres.style.display = "none";
+}
+
+
